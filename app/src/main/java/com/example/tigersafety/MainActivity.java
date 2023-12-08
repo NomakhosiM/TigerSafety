@@ -19,14 +19,14 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.login);
         signup = findViewById(R.id.signup);
 
-//        signup.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent intent = new Intent(MainActivity.this, signUp.class);
-//                startActivity(intent);
-//            }
-//        });
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, signUp.class);
+                startActivity(intent);
+            }
+        });
 
 //        login.setOnClickListener(new View.OnClickListener() {
 //            @Override
