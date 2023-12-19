@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TigerSafety"
         tools:targetApi="31">
         <activity
+            android:name=".setProfile"
+            android:exported="false" />
+        <activity
             android:name=".logIn"
             android:exported="false" />
         <activity

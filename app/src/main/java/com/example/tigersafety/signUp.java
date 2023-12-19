@@ -46,7 +46,7 @@ public class signUp extends AppCompatActivity {
                 }
 
                 //validating the password
-                if (!PWSignup.equals(PWCSignup)){
+                else if (!PWSignup.equals(PWCSignup)){
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
@@ -55,11 +55,11 @@ public class signUp extends AppCompatActivity {
                     });
                 }
 
-//                else {
-//                    //send password and email to firebase
-//                    Intent intent = new Intent(signUp.this, setProfile.class);
-//                    startActivity(intent);
-//                }
+                else {
+                    //send password and email to firebase
+                    Intent intent = new Intent(signUp.this, setProfile.class);
+                    startActivity(intent);
+                }
 
             }
         });

@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                Intent intent = new Intent(this, logIn.class);
-//                startActivity(intent);
-//            }
-//        });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, logIn.class);
+                startActivity(intent);
+            }
+        });
     }
 }

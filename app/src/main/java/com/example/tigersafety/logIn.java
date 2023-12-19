@@ -32,12 +32,8 @@ public class logIn extends AppCompatActivity {
             public void onClick(View view) {
                 //! connect email and password to firebase and validate each
                 if(EmailLogIn.isEmpty() || PWLogIn.isEmpty()){
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            Toast.makeText(logIn.this,"Invalid email or Invalid password",Toast.LENGTH_SHORT).show();
-                        }
-                    });
+
+                    runOnUiThread(() -> Toast.makeText(logIn.this,"Invalid email or Invalid password",Toast.LENGTH_SHORT).show());
                 }
 //                else{
 //                    //connect to firebase
@@ -48,8 +44,6 @@ public class logIn extends AppCompatActivity {
 
             }
         });
-
-
 
     }
 }
