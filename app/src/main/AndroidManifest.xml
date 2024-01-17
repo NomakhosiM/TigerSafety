@@ -13,6 +13,18 @@
         android:theme="@style/Theme.TigerSafety"
         tools:targetApi="31">
         <activity
+            android:name=".Screen_3"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_4"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_2"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_1"
+            android:exported="false" />
+        <activity
             android:name=".setProfile"
             android:exported="false" />
         <activity

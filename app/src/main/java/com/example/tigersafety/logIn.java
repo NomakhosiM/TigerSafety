@@ -24,25 +24,23 @@ public class logIn extends AppCompatActivity {
         pwLogIn = findViewById(R.id.pwLogIn);
         button = findViewById(R.id.button);
 
-        String EmailLogIn = emailLogIn.getText().toString().trim();
-        String PWLogIn = pwLogIn.getText().toString().trim();
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String EmailLogIn = emailLogIn.getText().toString().trim();
+                String PWLogIn = pwLogIn.getText().toString().trim();
+
                 //! connect email and password to firebase and validate each
-                if(EmailLogIn.isEmpty() || PWLogIn.isEmpty()){
+                if (EmailLogIn.isEmpty() || PWLogIn.isEmpty()) {
 
-                    runOnUiThread(() -> Toast.makeText(logIn.this,"Invalid email or Invalid password",Toast.LENGTH_SHORT).show());
+                    runOnUiThread(() -> Toast.makeText(logIn.this, "Invalid email or Invalid password", Toast.LENGTH_SHORT).show());
+                } else {
+                    //I need to connect to firebase
+                    Intent intent = new Intent(logIn.this, Screen_1.class);
+                    startActivity(intent);
                 }
-//                else{
-//                    //connect to firebase
-//                    Intent intent = new Intent(logIn.this, typeSRO.class);
-//                    startActivity(intent);
-//
-//                }
-
             }
+
         });
 
     }
