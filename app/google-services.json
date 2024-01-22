@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "364608065296",
+    "project_id": "tigersafetyapp",
+    "storage_bucket": "tigersafetyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364608065296:android:b700b1a8ca6053e7bcdf95",
+        "android_client_info": {
+          "package_name": "com.example.tigersafety"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp8oOmHci7bJ6oSO_FmxxeJiY0QLoX4k4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
